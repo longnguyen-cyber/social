@@ -9,4 +9,16 @@
   .profile {
     @apply before:content-[""] before:h-6 before:w-20 before:absolute before:top-3/4 before:z-10;
   }
+  .online {
+    @apply absolute bg-green-500 h-3 w-3 top-1/2 left-1/4 rounded-full mt-1 border-solid border-black border-2;
+  }
+  .time {
+    @apply absolute bg-gray-800 top-1/2 left-1/4 ml-5 rounded-full mt-1 border-solid border-black border-2 text text-green-400;
+  }
+  .inputLogin {
+    @apply border-gray-400 border-solid border outline-blue-400 rounded-md p-4;
+  }
+  .inputRegister {
+    @apply border-gray-400 border-solid border rounded-md p-1;
+  }
 }

@@ -4,7 +4,7 @@ import { AiFillTag } from 'react-icons/ai'
 import { GoLocation } from 'react-icons/go'
 function Share() {
   return (
-    <div className="p-6 shadow-xl">
+    <div className="p-6 pt-0 shadow-xl mx-4 rounded-lg">
       <div className="shareTop flex space-x-2 py-6 w-full border-b border-solid border-gray-400">
         <img
           src="https://source.unsplash.com/random"
