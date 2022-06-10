@@ -25,6 +25,7 @@ function Navbar() {
           <span className="font-semibold text-sm text-white cursor-text">
             kuga
           </span>
+
           <button className="logout">logout</button>
         </div>
         <BiMessageRoundedDetail className="h-10 mx-2 text-2xl" />

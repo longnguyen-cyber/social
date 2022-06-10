@@ -11,6 +11,10 @@ module.exports = {
         4: '4px',
         6: '6px',
         8: '8px'
+      },
+      fontSize: {
+        DEFAULT: '8px',
+        xss: '10px'
       }
     }
   },

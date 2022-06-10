@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Rightbar() {
+function ProfileImage() {
   const friends = [
     {
       id: 1,
@@ -43,33 +43,33 @@ function Rightbar() {
       id: 8,
       username: 'kuga',
       img: 'https://source.unsplash.com/random'
+    },
+    {
+      id: 9,
+      username: 'kuga',
+      img: 'https://source.unsplash.com/random'
     }
   ]
   return (
-    <div>
-      <h3 className="font-semibold text-2xl pt-4 pl-4">Friends</h3>
-      <ul>
-        {friends.map((friend) => (
-          <li className="w-full py-4 px-6 space-x-2 relative" key={friend.id}>
-            <img
-              src={friend.img}
-              alt=""
-              className="h-9 w-9 rounded-full inline-block"
-            />
-            {friend.time && (
-              <span className="time" style={{ marginLeft: '-1rem' }}>
-                {friend.time}
-              </span>
-            )}
-            {friend.online && <span className="online"></span>}
-            <span className="font-semibold text-xl cursor-text">
-              {friend.username}
-            </span>
-          </li>
+    <div className="p-4 rounded-md shadow-2xl col-span-2">
+      <div className="title flex justify-between my-4">
+        <h3 className="font-semibold text-xl">Pictures</h3>
+        <a href="/" className="no-underline text-xl">
+          show all
+        </a>
+      </div>
+      <div className="grid grid-cols-3">
+        {friends.slice(0, 9).map((friend) => (
+          <img
+            src={friend.img}
+            alt=""
+            key={friend.id}
+            className="h-32 w-32 rounded-md cursor-pointer hover:opacity-75 p-1"
+          />
         ))}
-      </ul>
+      </div>
     </div>
   )
 }
 
-export default Rightbar
+export default ProfileImage
