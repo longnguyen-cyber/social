@@ -6,7 +6,7 @@
   .logout {
     @apply bg-white font-semibold p-2 hover:bg-cyan-300 absolute top-full mt-2 rounded border-black border-[1px] hidden group-hover:block;
   }
-  .profile {
+  .more {
     @apply before:content-[""] before:h-6 before:w-20 before:absolute before:top-3/4 before:z-10;
   }
   .online {
